@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l"
         crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c"
         crossorigin="anonymous"></script>
+       
+        <script src="assets/spotifyalarm.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_bXSY_7Ssaeg_p4mCtDVFEAn8iCxk1bY"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Ubuntu" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha18/css/tempusdominus-bootstrap-4.min.css"
@@ -39,7 +43,7 @@
                 <span id="temp-input">56&#8457;</span>
             </h1>
             <h2>
-                <span id="condition-icon">Icon</span>
+                <span id="weather-icon">Icon</span>
             </h2>
         </div>
     </div>
@@ -67,10 +71,10 @@
                         </div>
                     </div>
 
-                    <div class="form-group">
+                    <!--<div class="form-group">
                         <label for="zip-input" id="info-input">Enter Zip Code:</label>
                         <input type="number" class="form-control" id="zip-input" select="required" onfocus="this.value=''" value="Zip Code">
-                    </div>
+                    </div>-->
 
                     <div class="form-group">
                         <label for="start-address-input" class="input-style" id="info-input">Starting Address:</label>
@@ -93,7 +97,7 @@
     <div class="container py-5 mb-4 text-center" id="traffic-time">
         <div class="traffic-container">
             <h3>It will take you
-                <span id=" destination-time">15 minutes</span> to get to your destination.
+                <span id="destination-time">15 minutes</span> to get to your destination.
             </h3>
             <div class="container py-5 mb-4" ID="music-section">
                 <div class="row music" id="music-icon">
@@ -106,7 +110,21 @@
                     </div>
                     <div class="col-sm-6">
                         <h2>
-                            <span id="music-data"></span>music data
+                            <span id="music-data">
+                                <!--Youtube iframe-->
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="youtube">
+                                               
+                                            </div> 
+                                <!--Spotify iframe-->
+                                            <div class="spotify">
+                                                
+                                            </div>            
+                                        </div>  
+                                    </div>    
+                                </div></span>
                         </h2>
                     </div>
                 </div>
